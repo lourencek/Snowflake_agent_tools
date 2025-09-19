@@ -1,5 +1,5 @@
 ---- To send email from Snowflake, you need to have a verified email. ----
----- In teh case of a trail account , this will be the email address that was used to create the account ----
+---- In the case of a trail account , this will be the email address that was used to create the account ----
 ---- Create a email integration that will be used by procedure ----
 CREATE or replace NOTIFICATION INTEGRATION PO_EMAIL_INTEGRATION
     TYPE=EMAIL
