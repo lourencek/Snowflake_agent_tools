@@ -35,5 +35,5 @@ def main(session: snowflake.snowpark.Session) -> str:
     return df.to_json(orient='records', date_format='iso')
 $$;
 
----- Test the forcast proc ---
--- call get_forecast_proc();
+---- Test the forcast proc ----
+call get_forecast_proc();
