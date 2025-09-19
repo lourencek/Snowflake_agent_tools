@@ -17,7 +17,7 @@ select * from coldweather;
 select * from hotweather;
 
 
----- Create 2 views for distinct predicted weather conditions ----
+---- Create 2 procedures for distinct predicted weather conditions ----
 CREATE OR REPLACE PROCEDURE po_email_proc_coldweather(
     email_integration_name STRING,
     email_address STRING
@@ -58,18 +58,16 @@ def main(
     Sweet Ice Cream & Hot Drinks!
   </p>
 </div>
-        
     """
     success: bool = session.call(
       "SYSTEM$SEND_EMAIL",
       'PO_EMAIL_INTEGRATION',
-      'lourencekruger.nz@gmail.com',
+      '<your verified email address>',
       'Marketing : Icecream shop  - Carleton, Michigan ',
       email_as_html,
       'text/html'
     )
     return "Email sent successfully" if success else "Sending email failed"
-
 $$;
 
 CREATE OR REPLACE PROCEDURE po_email_proc_hotweather(
@@ -112,20 +110,19 @@ def main(
     Sweet Ice Cream & Hot Drinks!
   </p>
 </div>
-        
     """
     success: bool = session.call(
       "SYSTEM$SEND_EMAIL",
       'PO_EMAIL_INTEGRATION',
-      'lourencekruger.nz@gmail.com',
+      '<your verified email address>',
       'Marketing : Icecream shop  - Carleton, Michigan ',
       email_as_html,
       'text/html'
     )
     return "Email sent successfully" if success else "Sending email failed"
-
 $$;
 
-CALL po_email_proc_hotweather(  'PO_EMAIL_INTEGRATION',  'lourencekruger.nz@gmail.com');
-CALL po_email_proc_coldweather(  'PO_EMAIL_INTEGRATION',  'lourencekruger.nz@gmail.com');
+---- Test 2 procedures for distinct predicted weather conditions
+CALL po_email_proc_hotweather(  'PO_EMAIL_INTEGRATION',  '<your verified email address>');
+CALL po_email_proc_coldweather(  'PO_EMAIL_INTEGRATION',  '<your verified email address>');
 
