@@ -7,7 +7,7 @@
 
 ---- Create of views that will be used to create content that is used in marketing emails. ----
 create or replace view hotweather as 
-SELECT AI_COMPLETE('claude-3-5-sonnet', 'please write a promotional column for our icecream (less than 50 words) for our shop called "the icecream shop Carleton, Michigan"')||' . Please use todays uniqe string of characters to get 10% discount off any icecream: '||randstr(5, random())  as "cold weather predicted for tomorrow";
+SELECT AI_COMPLETE('claude-3-5-sonnet', 'please write a promotional column for our icecream (less than 50 words) for our shop called "the icecream shop Carleton, Michigan"')||' . Please use todays uniqe string of characters to get 10% discount off any icecream: '||randstr(5, random())  as "hot weather predicted for tomorrow";
 
 create or replace  view coldweather as 
 SELECT AI_COMPLETE('claude-3-5-sonnet', 'please write a promotional column for our hot beverage(less than 50 words) for our shop called "the icecream shop Carleton, Michigan"')||' . Please use todays uniqe string of characters to get 10% discount off hot beverage: '||randstr(5, random())  as "cold weather predicted for tomorrow";
