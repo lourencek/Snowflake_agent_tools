@@ -1,1 +1,4 @@
-
+---- There are 2 emails that will be send - depending on the predicted weather of the following day. ----
+---- If tommorows temprature is above 65 fahrenheit , the "hot weather" email is send out to customers. This will give a generated content and a unique promo to drive sales for the day. ----
+---- If tommorows temprature is below 65 fahrenheit , the "cold weather" email is send out to customers. This will give a generated content and a unique promo to drive sales for the day. ----
+---- The 2 pro
