@@ -5,7 +5,7 @@
 ---- To send email from Snowflake, you need to have a verified email. ----
 ---- In the case of a trail account , this will be the email address that was used to create the account. ----
 
----- Create of views that will be used to create content that is used in marketing emails ----
+---- Create of views that will be used to create content that is used in marketing emails. ----
 create or replace view hotweather as 
 SELECT AI_COMPLETE('claude-3-5-sonnet', 'please write a promotional column (less than 100 words) for a  shop - that offer a 10% discount off icecream "if you give a this icecream fact" to the person at the paypoint. the column should give a icecream fact that needs to be give to the cashier') as "hot weather predicted for tomorrow";
 
