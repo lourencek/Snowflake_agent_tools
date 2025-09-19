@@ -1,5 +1,5 @@
----- First create the view (stock_take_view) that is used by the stocktake prodecure ----
----- In this view there are expected stock levels , that will determin if a new order needs to be placed with supplier ----
+---- First create the view (stock_take_view) that is used by the stocktake prodecure. ----
+---- In this view there are expected stock levels , that will determin if a new order needs to be placed with supplier. ----
 create or replace view stock_take_view as 
 SELECT
     t.item_id,
