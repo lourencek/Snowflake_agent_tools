@@ -67,7 +67,7 @@ def main(
     """
     success: bool = session.call(
       "SYSTEM$SEND_EMAIL",
-      ''QUERY_HISTORY_AUDIT_email_INTEGRATION'',
+      ''PO_EMAIL_INTEGRATION'',
       ''<your verified email address>'',
       ''purchase_order'',
       email_as_html,
