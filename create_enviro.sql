@@ -13,6 +13,7 @@ CREATE OR REPLACE TABLE icecream_shop (
     unit_price        NUMBER(10,2),        -- Price per unit
     supplier_name     STRING             -- Name of supplier
  );
+
 ---- Insert initial stock data ----
 INSERT INTO icecream_shop (item_id, item_name, category, quantity_on_hand, unit_price, supplier_name) VALUES
 ('IC001', 'Vanilla Cone', 'Cone', 50, 2.50, 'SweetCream Ltd'),
