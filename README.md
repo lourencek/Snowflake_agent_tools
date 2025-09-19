@@ -7,10 +7,11 @@ The shop sells both ice cream and hot beverages.
 
 ## The Tools
 The script to create the below tool can be find in the repository.
-a)getForcast
+###a)getForcast
 
-b)stockTake
-c)sendPOemail
-d)email_cold_weather
-e)email_hot_weather
+###b)stockTake
+
+###c)sendPOemail
+###d)email_cold_weather
+###e)email_hot_weather
 
