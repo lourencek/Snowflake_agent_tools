@@ -24,7 +24,7 @@ INSERT INTO icecream_shop (item_id, item_name, category, quantity_on_hand, unit_
 ('HD002', 'Cappuccino', 'Hot Drink', 25, 3.50, 'CoffeeCo'),
 ('HD003', 'Latte', 'Hot Drink', 20, 4.00, 'CoffeeCo');
 
----- Mimic a businss day ----
+---- Mimic a businss day , reducing stock with random qunatities for each product ----
 ---- Note this exlude 'IC003', as this is a non-popular product and serve as a baseline  ----
 update icecream_shop set quantity_on_hand =quantity_on_hand - ABS(RANDOM()) % 8  where item_id='IC001';
 update icecream_shop set quantity_on_hand =quantity_on_hand - ABS(RANDOM()) % 8 where item_id='IC002';
