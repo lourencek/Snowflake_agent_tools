@@ -1,5 +1,5 @@
 ---- Create store procedure that will  that is used by the stocktake prodecure that have access to a machine learning model  ----
----- Polynomial Regression, is a machine learning model that extends linear regression to handle non-linear relationships between independent and dependent variables.----
+---- Polynomial Regression, is a machine learning model that extends linear regression to handle non-linear relationships between independent and dependent variables. ----
 CREATE OR REPLACE PROCEDURE PREDICT_SALES_FROM_WEATHER_JSON()
 RETURNS VARIANT
 LANGUAGE PYTHON
